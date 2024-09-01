@@ -20,18 +20,20 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="/">Faculty Evaluation System</a>
+            <a class="navbar-brand" href="/">EduEval : Faculty Evaluation System</a>
         </nav>
         
         <h1>Interactive Performance Visualization</h1>
         {{ graph_html|safe }}
+        <div>{{ clusters_html|safe }}</div>
+        <div>{{ metrics_html|safe }}</div>
         <a href="{{ url_for('index') }}" class="btn btn-primary mt-3">Back to Home</a>
     </div>
     <!-- Bootstrap JS, Popper.js, and jQuery -->
