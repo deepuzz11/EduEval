@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Analysis</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-body {
+            padding: 1.5rem;
+        }
+        .description {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .img-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Performance Analysis</h1>
+        <div class="row">
+            <!-- Graph Display -->
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Performance Graph</h5>
+                        <div class="img-container">
+                            <img src="data:image/png;base64,{{ img_base64 }}" class="img-fluid" alt="Performance Graph">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Scores -->
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Category Breakdown</h5>
+                        <p class="card-text description">
+                            <strong>Category with Most Evaluations:</strong> {{ top_category }}<br>
+                            <strong>Average Score by Category:</strong><br>
+                            {% if category_scores %}
+                                {% for category, score in category_scores.items() %}
+                                    {{ category }}: {{ score }}<br>
+                                {% endfor %}
+                            {% else %}
+                                No category scores available.
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
