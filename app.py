@@ -79,10 +79,13 @@ def insights():
 
     return render_template('insights.html', recommendations=recommendations)
 
+
 @app.route('/feedback', methods=['POST'])
-def feedback():
-    user_feedback = request.form.get('feedback')
-    # Here you would typically store feedback in a database or file
+def handle_feedback():
+    feedback = request.form.get('feedback')
+    if feedback:
+        with open('feedback.txt', 'a') as f:
+            f.write(feedback + '\n')
     return '<p>Thank you for your feedback!</p>'
 
 if __name__ == '__main__':
