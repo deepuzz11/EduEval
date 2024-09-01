@@ -59,31 +59,6 @@
 - **Data Handling**: Python libraries for data analysis and manipulation
 - **Visualization**: JavaScript libraries for creating interactive charts and graphs
 
-## Future Scope
-
-**EduEval** has significant potential for enhancement and expansion:
-
-1. **Advanced Machine Learning Models:**
-   - Integrate more complex machine learning models for deeper insights and predictions. Potential models include clustering for identifying patterns and predictive models for forecasting future performance.
-
-2. **User Authentication and Authorization:**
-   - Implement user authentication to restrict access to sensitive data and ensure that only authorized users can submit evaluations or view analytics.
-
-3. **Database Integration:**
-   - Transition from CSV file storage to a relational database (e.g., PostgreSQL, MySQL) to improve data management, scalability, and performance.
-
-4. **Real-time Analytics:**
-   - Develop features for real-time data updates and analytics, enabling users to see the most current data without manual refreshes.
-
-5. **Enhanced Data Visualizations:**
-   - Add more sophisticated and customizable data visualization options to provide richer insights and improve user experience.
-
-6. **Mobile and Multi-platform Support:**
-   - Create mobile-friendly versions of the application or native apps to enhance accessibility across different devices.
-
-7. **Integration with Academic Systems:**
-   - Integrate EduEval with existing academic management systems to automate data collection and provide seamless updates.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
