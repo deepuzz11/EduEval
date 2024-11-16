@@ -102,13 +102,6 @@ EduEval/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
 
-For any inquiries or issues, please contact:
-
-- Your Name - [your.email@example.com](mailto:your.email@example.com)
-- Project Link: [https://github.com/yourusername/EduEval](https://github.com/yourusername/EduEval)
-
----
 
 Thank you for your interest in EduEval! We hope this platform enhances the evaluation process in academic institutions and provides valuable insights into faculty performance.
