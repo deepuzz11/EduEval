@@ -101,7 +101,3 @@ EduEval/
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
-
-Thank you for your interest in EduEval! We hope this platform enhances the evaluation process in academic institutions and provides valuable insights into faculty performance.
